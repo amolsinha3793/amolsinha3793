@@ -1,0 +1,31 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Work stats (amolsinha3793)
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: amolsinha3793
+          base_indepth: yes
+          # Default is "owner" only, which excludes org-owned repos - your
+          # real Uplight/Autogrid activity lives on repos you don't
+          # personally own, so this is required to see it at all.
+          repositories_affiliations: owner, collaborator, organization_member
+          plugin_languages: yes
+          # Achievements disabled: upstream bug, the query still references
+          # GitHub's fully-removed Projects (classic) API and errors out.
+          # https://github.com/lowlighter/metrics/issues/1706
+          plugin_achievements: no
