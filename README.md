@@ -14,3 +14,11 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![Metrics](/github-metrics.svg)
+
+</div>
