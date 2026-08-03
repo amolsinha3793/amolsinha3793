@@ -1,4 +1,4 @@
-### Hi there 👋
+## Work profile 
 
 <!--
 **amolsinha3793/amolsinha3793** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## 📊 GitHub Stats
+###  📊 GitHub Stats
 
 <div align="center">
 
