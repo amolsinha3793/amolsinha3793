@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 ![Metrics](/github-metrics.svg)
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=amol3793&theme=tokyonight&hide_border=true)
+[![GitHub Streak](https://streak-stats.demolab.com?user=amolsinha3793&theme=tokyonight&hide_border=true&mode=weekly&hide_total_contributions=true)](https://git.io/streak-stats)
 ![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=amol3793&theme=tokyo-night&hide_border=true)
 
 </div>
