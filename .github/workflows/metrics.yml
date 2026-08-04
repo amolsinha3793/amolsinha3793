@@ -32,11 +32,11 @@ jobs:
           base: header, activity, metadata
           config_timezone: Asia/Kolkata
 
-          # Replaces the broken top-langs card
-          plugin_languages: yes
-          plugin_languages_details: percentage
-          plugin_languages_threshold: 2%
-          plugin_languages_other: yes
+          # OFF for this account. Both of its public repos report
+          # "language": null to the API, so the plugin renders a heading that
+          # literally reads "0 Languages" over an empty bar. The real work here
+          # is in private repos the languages plugin cannot see.
+          plugin_languages: no
 
           # Last-6-months contributions card (180 days, isometric)
           plugin_isocalendar: yes
@@ -79,6 +79,15 @@ jobs:
             for (const el of [...document.querySelectorAll(".items-wrapper .field")]) {
               const text = el.textContent.replace(/\s+/g, " ").trim()
               if (DROP.some(re => re.test(text))) el.remove()
+            }
+
+            // Only one public repo has commits on this account, so
+            // "Contributed to 1 repository" reads as a weakness sitting next to
+            // the commit count. Drop it below 5 and let it return on its own.
+            for (const el of [...document.querySelectorAll(".items-wrapper div.field")]) {
+              const match = el.textContent.replace(/\s+/g, " ").trim().match(/^Contributed to (\d[\d,]*) repositor(?:y|ies)$/)
+              if (match && Number(match[1].replace(/,/g, "")) < 5)
+                el.remove()
             }
 
             // two-week commit strip in the header
