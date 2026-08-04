@@ -15,10 +15,14 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-###  📊 GitHub Stats
+
+## 📊 GitHub Stats
 
 <div align="center">
 
-![Metrics](/github-metrics.svg)
+!Metrics
+
+!GitHub Streak
+!Activity Graph
 
 </div>
