@@ -20,9 +20,9 @@ Here are some ideas to get you started:
 
 <div align="center">
 
-!Metrics
+![Metrics](/github-metrics.svg)
 
-!GitHub Streak
-!Activity Graph
+![GitHub Streak](https://streak-stats.demolab.com/?user=amol3793&theme=tokyonight&hide_border=true)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=amol3793&theme=tokyo-night&hide_border=true)
 
 </div>
